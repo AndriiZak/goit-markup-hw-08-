@@ -1,0 +1,212 @@
+.header {
+    display: flex;
+    border-bottom: 1px solid #ECECEC;
+
+    &__logo {
+        display: inline-block;
+
+        color: var(--color-section);
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+
+        @media screen and (min-width:480px) {
+            font-size: 24px;
+            line-height: 1.16;
+        }
+
+    }
+
+    &__web {
+        color: var(--color-brand);
+    }
+
+
+
+    &__studio {
+        color: #000000;
+    }
+
+    &__navigation {
+        display: none;
+        color: var(--color-section);
+
+        @media screen and (min-width:480px) {
+                display: block;
+            }
+        
+        @media screen and (min-width:768px) {
+            display: flex;
+        }
+    }
+
+
+    &__stile {
+
+        gap: 88px;
+        display: flex;
+        align-items: center;
+
+        @media screen and (min-width:480px) {
+                width: calc((100% - 88px)/2)
+            }
+
+
+    }
+
+    &__contact {
+
+        display: none;
+        gap: 40px;
+
+        @media screen and (min-width:480px){
+            display: block;
+            }
+        
+        @media screen and (min-width:768px) {
+            display: flex;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        gap: 40px;
+
+       
+
+    }
+
+    &__link--conteiner-nav {
+        display: block;
+        padding: 32px 0;
+        color: var(--color-background);
+
+    }
+
+    &__carent-link--conteiner-nav {
+        display: block;
+        padding: 32px 0;
+        color: var(--color-background);
+    }
+
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+
+
+
+    &__carent-link {
+        color: var(--color-brand);
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 1.14;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+    }
+
+    &__line {
+        display: flex;
+        position: relative;
+
+        @media screen and (min-width:480px) {
+                width: calc((100% - 50px)/4)
+            }
+    }
+
+    &__carent-link--conteiner-nav::after {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        left: -1.86px;
+        transform: translatey(1px);
+        content: "";
+        width: 48px;
+        height: 4px;
+        background-color: var(--color-brand);
+    }
+
+
+
+    &__tel {
+        display: flex;
+        padding: 32px 0;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-text-grey);
+        fill: var(--color-text-grey);
+        transition: var(--transition-header);
+        transition-timing-function: var(--transition-cubic-bezier);
+
+        @media screen and (max-width:768px) {
+            margin-right: 30px;
+            padding: 0;
+            
+        }
+
+        &:hover,:focus {
+                fill: var(--color-brand);
+            }
+    }
+
+    &__email {
+        display: flex;
+        padding: 32px 0;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-text-grey);
+        fill: var(--color-text-grey);
+        transition: var(--transition-header);
+        transition-timing-function: var(--transition-cubic-bezier);
+
+        @media screen and (max-width:767px) {
+            padding: 0;
+            margin-bottom: 10px;
+            margin-right: 15px;
+            }
+        
+
+        &:hover,:focus {
+                fill: var(--color-brand);
+        
+            }
+    }
+
+
+
+
+    &__link {
+        transition: var(--transition-header);
+        transition-timing-function: var(--transition-cobic-bezier);
+
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 1.14;
+        font-family: inherit;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+
+        &:hover,:focus {
+        
+                color: var(--color-brand);
+                font-size: 14px;
+                line-height: 1.14;
+                font-family: inherit;
+                font-weight: 500;
+                letter-spacing: 0.02em;
+        
+            }
+
+    }
+
+}
+

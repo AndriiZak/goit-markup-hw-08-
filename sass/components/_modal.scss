@@ -1,0 +1,65 @@
+.modal {
+    padding: 40px 40px;
+    position: absolute;
+ 
+    z-index: 5;
+    top: 50%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 450px;
+    height: 609px;
+    margin: 0 15px;
+    
+
+    background-color: var(--color-section);
+
+    @media screen and (min-width:480px) {}
+    
+    @media screen and (min-width:768px) {
+        width: 528px;
+        height: 581px;
+    }
+
+
+    &__button {
+        position: absolute;
+        padding: 6px 6px;
+        right: 8px;
+        top: 8px;
+
+
+        width: 30px;
+        height: 30px;
+
+        transition: var(--transition-translate);
+        transition-timing-function: var(--transition-cobic-bezier);
+        background-color: var(--color-section);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        background-size: contain;
+
+        &:hover,:focus {
+                fill: var(--color-brand);
+            }
+    }
+
+
+
+
+    &__title {
+        margin-bottom: 12px;
+
+        color: var(--color-text);
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+
+}
+
+.hero__button--stiles{
+    margin-top: 31px;
+}

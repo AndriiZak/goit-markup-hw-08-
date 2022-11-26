@@ -1,0 +1,116 @@
+.oll-product{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+    &__subtitle {
+        margin-bottom: 4px;
+
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+    }
+
+    &__text {
+
+        transition: var(--transition-header);
+        transition-timing-function: var(--transition-cobic-bezier);
+
+        color: var(--color-text-grey);
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.03em;
+    }
+
+
+    &__link {
+
+        color: var(--color-background);
+        font-size: 16px;
+        line-height: 1.87;
+        font-family: inherit;
+        text-decoration: none;
+
+        &:hover,:focus {
+                font-family: inherit;
+                color: var(--color-background);
+                text-decoration: none;
+                font-style: normal;
+                cursor: default;
+            }
+
+        &:hover .oll-product__description-text {
+            transform: translateY(0);
+        }
+    }
+
+
+
+    &__list {
+
+        display: block;
+
+    }
+
+    &__list--list:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    &__list--list {
+        transition: var(--transition-header);
+        transition-timing-function: var(--transition-cobic-bezier);
+
+        &:hover,:focus {
+                transition: var(--transition-header);
+                box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+            }
+    }
+
+
+    &__list:nth-last-child(-n+3) {
+        margin-bottom: 0;
+    }
+
+
+    &:nth-child(2n + 1){
+        gap: 30px;
+        color: var(--color-background);
+    }
+
+
+
+    &__border {
+        padding: 20px 24px;
+        border: 1px solid #EEEEEE;
+    }
+
+    &__description {
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__description-text {
+        position: absolute;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 63px 24px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: translateY(100%);
+        transition: var(--transition-translate);
+        transition-timing-function: var(--transition-cobic-bezier);
+
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.555;
+        letter-spacing: 0.03em;
+        color: var(--color-section);
+        background-color: rgba(33, 150, 243, 0.9);
+
+    }
+}

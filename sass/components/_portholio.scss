@@ -1,0 +1,21 @@
+.portholio__carent-link {
+    color: var(--color-brand);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+
+    &::after {
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            left: -2.905px;
+            transform: translatey(1px);
+            content: "";
+            width: 78px;
+            height: 4px;
+            background-color: var(--color-brand);
+    
+        }
+}
